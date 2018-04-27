@@ -4,6 +4,15 @@ body {
   background-color: #f7f6f6;
 }
 
+/** POLICE LOGO **/
+.logo {
+  font-family: 'Changa', sans-serif;
+  font-size: 40px;
+  color: #2a9ad6;
+  font-style: italic;
+  font-weight: bold;
+}
+
 /************************************** H  E  A  D  E  R  ****************************************/
 
 header {
@@ -16,14 +25,6 @@ header {
   -moz-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
   z-index: 9;
-}
-
-header .logo {
-  font-family: 'Changa', sans-serif;
-  font-size: 40px;
-  color: #2a9ad6;
-  font-style: italic;
-  font-weight: bold;
 }
 
 header a:link, header a:visited, header a:hover, header a:active {
@@ -43,11 +44,7 @@ header .card-icon {
 
 header .panier{
   width: 70px;
-  font-family: 'Changa', sans-serif;
   font-size: 30px;
-  color: #2a9ad6;
-  font-style: italic;
-  font-weight: bold;
 }
 
 /*******************************  M  A  I  N    T  O  P  **********************************/
@@ -75,14 +72,18 @@ main .main-top {
 }
 
 main .main-top h1 {
-  font-family: 'Montserrat', sans-serif;
   margin-left: 0;
   padding-top: 100px;
+
+}
+
+h1 {
+  font-family: 'Changa', sans-serif;
   font-weight: bold;
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
+h3 {
+  font-family: 'Changa', sans-serif;
   font-size: 28px;
 }
 
@@ -152,8 +153,7 @@ main .pres-cards {
   justify-content: center;
 }
 
-main .main-content h2 {
-  font-family: 'Quicksand', sans-serif;
+main .main-content h3 {
   margin: 30px 0 20px 0;
 }
 
@@ -183,11 +183,6 @@ main .main-content .pres-cards-content {
 }
 
 /************************************** C  A  R  D  **************************************/
-
-.no-margin-no-padding {
-  padding: 0;
-  margin: 0;
-}
 
 #card-empty-404 {
   border: 1px solid #e2e2e2;
@@ -333,10 +328,6 @@ main .main-content .pres-cards-img {
   margin-top: 20px;
 }
 
-main .main-content h3 {
-  margin: 15px 0 0 0;
-}
-
 /*********************************** F  O  O  T  E  R  ***********************************/
 
 footer {
@@ -362,11 +353,7 @@ footer a:hover {
 }
 
 footer .logo {
-  font-family: 'Changa', sans-serif;
-  font-size: 40px;
   color: white;
-  font-style: italic;
-  font-weight: bold;
 }
 
 /************************ R E S P O N S I V E   9 9 1 P X  *************************/
