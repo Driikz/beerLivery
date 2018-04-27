@@ -250,18 +250,10 @@ function initMap() {
     ]
   });
 
-  var cities = document.getElementsByClassName("city-coords");
   for (var i = 0; i < cities.length; i++) {
     var marker = new google.maps.Marker({
-      position: {
-        lat: parseFloat(cities[i].dataset.lat),
-        lng: parseFloat(cities[i].dataset.lng)
-      },
-      map: map,
-      label: {
-        text: cities[i].dataset.name,
-        color: 'white'
-      }
+      position: lyon,
+      map: map
     });
   }
 }
