@@ -49,6 +49,20 @@ header .panier{
   font-size: 30px;
 }
 
+header #search-bar {
+  width: 60%;
+  height: 100%;
+}
+
+.header-bar-address {
+  margin-top: 13px;
+  margin-bottom: 8px;
+}
+
+#header-btn-address {
+  margin: 4px 0 5px 10px;
+  padding: 4px 12px 4px 12px;
+}
 /*******************************  M  A  I  N    T  O  P  **********************************/
 
 .top-background {
@@ -93,7 +107,7 @@ h3 {
   padding-right: 5px;
 }
 
-#search-bar {
+.main-top #search-bar {
   width: 478px;
   height: 40px;
 }

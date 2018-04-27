@@ -32,10 +32,23 @@ router.get('/', function(req, res, next) {
       res.render('catalogue', {
         beerList: databeers,
         beerCard: req.session.dataCardBeer,
-        articles: totalArticles
+        articles: totalArticles,
+        shipAddress: req.session.address
       });
     });
   }
+});
+
+router.post('/modify-address', function (req, res){
+  req.session.address = req.body.address;
+  beerModel.find(function(err, databeers) {
+    res.render('catalogue', {
+      beerList: databeers,
+      beerCard: req.session.dataCardBeer,
+      articles: totalArticles,
+      shipAddress: req.session.address
+    });
+  });
 });
 
 router.post('/', function(req, res, next) {

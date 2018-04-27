@@ -20,10 +20,16 @@
   <header>
     <div class="container">
       <div class="row">
-        <a href="/" class="col-5 logo p-0">
+        <a href="/" class="col-3 logo p-0">
           <div>beerLivery</div>
         </a>
-        <a href="/card" class="col-7 card-icon">
+          <div class="offset-2 col-4 header-bar-address">
+            <form class="form-inline" action="/catalogue/modify-address" method="POST">
+              <input class="form-control" type="text" name="address" placeholder="<%=shipAddress%>" id="search-bar">
+              <button type="submit" class="btn btn-primary mb-2" id="header-btn-address">Modifier</button>
+            </form>
+          </div>
+        <a href="/card" class="offset-1 col-2 card-icon">
           <div class="panier logo">
             <%=articles%>
           </div>
@@ -116,6 +122,7 @@
       </div>
     </div>
   </footer>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsUHAZo4SpFfe0M0_05WWmYKy7AcLoFtI&callback=findAddress&libraries=places"></script>
   <script src="javascripts/script.js"></script>
 </body>
 
