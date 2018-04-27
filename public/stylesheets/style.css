@@ -6,6 +6,10 @@ body {
 
 }
 
+#map {
+  height: 400px;
+}
+
 /** POLICE LOGO **/
 .logo {
   font-family: 'Changa', sans-serif;
