@@ -33,7 +33,7 @@ header a:link, header a:visited, header a:hover, header a:active {
 header .card-icon {
   background-image: url("/images/card_icon.svg");
   background-position: right;
-  background-size: 120px;
+  background-size: 100px;
   background-repeat: no-repeat, no-repeat;
   display: flex;
   justify-content: flex-end;
@@ -41,8 +41,8 @@ header .card-icon {
   margin-top: 5px;
 }
 
-header .panier {
-  width: 75px;
+header .panier{
+  width: 70px;
   font-family: 'Changa', sans-serif;
   font-size: 30px;
   color: #2a9ad6;
@@ -52,17 +52,26 @@ header .panier {
 
 /*******************************  M  A  I  N    T  O  P  **********************************/
 
-main .main-top {
+.top-background {
+  width: 100%;
   height: 480px;
   padding-top: 64px;
+  position: absolute;
   background: rgba(244, 144, 12, 0.85);
+  background-image: radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
+  -webkit-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+main .main-top {
+  height: 480px;
+  position: relative;
   background-image: url("/images/beer_ice_transparent.png"), radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
   background-repeat: no-repeat, no-repeat;
   background-position: right 25% bottom;
   background-size: 500px, auto;
-  -webkit-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
 }
 
 main .main-top h1 {
@@ -179,12 +188,9 @@ main .main-content .pres-cards-content {
   padding: 0 0 50px 0px;
 }
 
-#card-background {
-  width: 100%;
-  height: 480px;
-  position: absolute;
-  background: rgba(244, 144, 12, 0.85);
-  background-image: radial-gradient(ellipse at 30% top, #fccd35 15%, transparent 70%);
+#card-img-empty {
+  width: 500px;
+  height: 400px;
 }
 
 .main-card {
@@ -358,23 +364,9 @@ footer .logo {
 
 /************************ R E S P O N S I V E   9 9 1 P X  *************************/
 @media only screen and (max-width: 991px) {
-  /********************* H E A D E R **********************/
-  header .logo {
-    font-family: 'Changa', sans-serif;
-    font-size: 40px;
-    color: #2a9ad6;
-    font-style: italic;
-    font-weight: bold;
-  }
-  header a:link, header a:visited, header a:hover, header a:active {
-    text-decoration: none;
-  }
-  header .card-icon img {
-    width: 85px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-  }
-  /********************** I N D E X ***********************/
+
+  /****************** I N D E X *******************/
+
   main .main-top {
     height: 400px;
     padding: 0;
