@@ -34,7 +34,6 @@ for (let biere of bieres.children) {
             b_selector.parentElement.children[i].querySelector('img').src = fullBeerImg;
           }
           document.querySelector('#b' + id).value = val;
-
           b_selector.querySelector('img').src = fullBeerImg;
         }
         document.querySelector('#val' + id).value = val;
