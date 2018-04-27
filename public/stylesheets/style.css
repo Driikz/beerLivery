@@ -138,9 +138,7 @@ h2 {
   font-weight: bold;
 }
 
-
 /**************************************  M  A  I  N    C  O  N  T  E  N  T   **************************************/
-
 
 main .main-content {
   background-color: #f7f6f6;
@@ -169,6 +167,15 @@ main .main-content .pres-cards-content {
   margin: 0 30px 0 30px;
   padding: 10px 15px 15px 15px;
   font-size: 16px;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #img-error {
@@ -363,6 +370,7 @@ footer .logo {
 }
 
 /************************ R E S P O N S I V E   9 9 1 P X  *************************/
+
 @media only screen and (max-width: 991px) {
 
   /****************** I N D E X *******************/
@@ -410,7 +418,9 @@ footer .logo {
     margin: 12px 0 12px 0;
   }
 }
+
 /************************ R E S P O N S I V E   7 6 7 P X  *************************/
+
 @media only screen and (max-width: 767px) {
   /********************** I N D E X ***********************/
   main .main-top {
@@ -458,7 +468,9 @@ footer .logo {
     font-size: 30px;
   }
 }
+
 /************************ R E S P O N S I V E   4 2 2 P X  *************************/
+
 @media only screen and (max-width: 422px) {
   /********************** I N D E X **********************/
   main .main-top h1 {
