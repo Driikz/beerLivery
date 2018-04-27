@@ -286,6 +286,11 @@ main .main-content .pres-cards-content {
   bottom: 0;
 }
 
+.opt-img {
+  height: 24px;
+  margin-right: 10px;
+}
+
 /****************************** S  Y  S  T  E  M  E    + / -   C  A  R  D  *********************************/
 
 .count-input {

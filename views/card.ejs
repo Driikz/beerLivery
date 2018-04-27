@@ -107,7 +107,7 @@
                     <!-- Option décapsuleur -->
                     <div class="col-md-12">
                       <div class="row align-items-center">
-                        <div class="col-3 m-0 p-0">
+                        <div class="col-2 m-0 p-0">
                           <div class="card-quantity">
                             <div class="count-input space-bottom">
                               <a href="/card/options-dec-decrease" class="incr-btn-options" data-action="decrease" href="#">–</a>
@@ -116,7 +116,8 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-9 m-0 p-0">
+                        <div class="col-10 m-0 p-0">
+                          <span><img class="opt-img" src="/images/bottle-opener.svg" alt=""></span>
                           <span>Décaps' beerLivery (<%=optionsData.decapsuleur.price%>€)</span>
                         </div>
                       </div>
@@ -133,7 +134,7 @@
                         %>
                           <div class="col-12">
                             <div class="row align-items-center">
-                              <div class="col-6 m-0 p-0">
+                              <div class="col-4 m-0 p-0">
                                 <div class="card-quantity">
                                   <div class="count-input space-bottom">
                                     <a href="/card/options-decrease?position=<%=i%>" class="incr-btn-options" data-action="decrease" href="#">–</a>
@@ -142,7 +143,8 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="col-6 m-0 p-0">
+                              <div class="col-8 m-0 p-0">
+                                <span><img class="opt-img" src="<%=optionsData.supplements[i].image%>"></span>
                                 <span><%=optionsData.supplements[i].name%></span>
                               </div>
                             </div>
