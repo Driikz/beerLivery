@@ -145,7 +145,7 @@ h3 {
 }
 
 #background-articles .rating-bar .b-img {
-  height: 49px;
+  height: 40px;
 }
 
 #background-articles .rating-bar {
@@ -153,7 +153,7 @@ h3 {
 }
 
 #background-articles .rating-bar img {
-  margin: -2px;
+  margin-right: -3.5px;
 }
 
 
@@ -172,13 +172,12 @@ h3 {
   position: absolute;
   vertical-align: bottom;
   margin-top: 70px;
-  margin-left: -30px;
+  margin-left: -35px;
   padding: 10px;
   font-size: 24px;
   font-weight: bold;
   font-family: 'Changa', sans-serif;
   color: #F4921B;
-
 }
 
 /**************************************  M  A  I  N    C  O  N  T  E  N  T   **************************************/

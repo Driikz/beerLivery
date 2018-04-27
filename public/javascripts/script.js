@@ -10,8 +10,8 @@ function findAddress() {
 }
 
 let bieres = document.querySelector('.container-bieres')
-let emptyBeerImg = '/images/beer-empty-160-513.svg';
-let fullBeerImg = '/images/beer-full-160-513.svg'
+let emptyBeerImg = '/images/beer-clear.png';
+let fullBeerImg = '/images/beer-full.png'
 for (let biere of bieres.children) {
   let rate = biere.querySelector('.rating-bar');
   for (b of rate.children) {
