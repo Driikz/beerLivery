@@ -37,6 +37,7 @@
         <div class="col-md-6 col-lg-4">
           <div class="article">
             <img src="https://img.saveur-biere.com/img/p/<%=beerList[i].image%>" alt="" class="img-article">
+            <span class="article-price"><%=beerList[i].price%>€</span>
             <div class="offset-1 col-10">
               <hr>
               <!-- Horizontal Rule -->
@@ -52,15 +53,16 @@
                 <input type="hidden" name="quantity" value="0" id="b<%=i%>">
                 <input type="hidden" name="name" value="<%=beerList[i].name%>">
                 <input type="hidden" name="price" value="<%=beerList[i].price%>">
-                <span class="rating-bar">
+                <span class="offset-2 col-8 rating-bar">
                 <%
                 for (let j = 1; j <= 12; j++) { %>
                   <a data-id="<%=i%>" data-value="<%=j%>"><img class="b-img" src="/images/beer-empty-160-513.svg"></a>
                 <% } %>
                 </span>
-              <span>
+              <span class="col-1 centered n-0 p-0">
                 <input class="beer-quantity" id="val<%=i%>" value="0" disabled></input>
               </span>
+
               </div>
             </form>
           </div>
