@@ -29,6 +29,9 @@ var optionsData = {
   }
 };
 
+var origin = "153 cours Albert Thomas 69003 Lyon";
+
+
 router.get('/', function(req, res, next) {
   if (!req.session.dataCardBeer) {
     res.redirect('/');
@@ -175,7 +178,7 @@ router.post('/checkout', function(req, res) {
 
   stripe.customers.create({email: req.body.stripeEmail, source: req.body.stripeToken}).then(customer => stripe.charges.create({amount: totalCmd, description: "Commande beerLivery", currency: "eur", customer: customer.id})).then(charge => {
     req.session.dataCardBeer = [];
-    res.render('confirm')
+    res.render('confirm', {origin});
   });
 });
 
