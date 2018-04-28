@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
       res.render('catalogue', {
         beerList: databeers,
         beerCard: req.session.dataCardBeer,
-        articles: totalArticles,
+        nbArticles: totalArticles,
         shipAddress: req.session.address
       });
     });
@@ -44,7 +44,9 @@ router.post('/modify-address', function (req, res){
   res.redirect('/catalogue');
 });
 
+
 router.post('/', function(req, res, next) {
+
   if (req.body.quantity >= 0) {
     let exists = req.session.dataCardBeer.find(function(el) {
       return el.name === req.body.name;
@@ -68,6 +70,14 @@ router.post('/', function(req, res, next) {
       articles: totalArticles
     });
   });
+});
+
+router.get('/article', function (req, res, next){
+
+
+  beerView = req.query.name;
+  console.log(beerView);
+  res.render('article', {beerView});
 });
 
 module.exports = router;
