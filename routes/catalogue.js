@@ -14,7 +14,7 @@ var options = {
 mongoose.connect('mongodb://beerliveryUser:azerty@ds255329.mlab.com:55329/beerlivery', options, function(err) {
   console.log(err);
 });
-var beerSchema = mongoose.Schema({name: String, type: String, image: String, price: Number, quantity: Number});
+var beerSchema = mongoose.Schema({name: String,type: String,image: String,price: Number,origin: String,description: String,alchooldegree: String,volume: Number,tasteslike: String,quantity: Number});
 var beerModel = mongoose.model('databeers', beerSchema);
 // F I N   B D D
 
@@ -73,11 +73,11 @@ router.post('/', function(req, res, next) {
 });
 
 router.get('/article', function (req, res, next){
-
-
-  beerView = req.query.name;
-  console.log(beerView);
-  res.render('article', {beerView});
+  res.render('article', {
+    beerView: req.query,
+    nbArticles: totalArticles,
+    shipAddress: req.session.address
+  });
 });
 
 module.exports = router;

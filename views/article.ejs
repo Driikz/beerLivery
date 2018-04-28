@@ -15,10 +15,82 @@
 </head>
   <body>
 
+    <header>
+      <div class="container">
+        <div class="row">
+          <a href="/" class="col-3 logo p-0">
+            <div>beerLivery</div>
+          </a>
+            <div class="offset-2 col-4 header-bar-address">
+              <form class="form-inline" action="/catalogue/modify-address" method="POST">
+                <input class="form-control" type="text" name="address" placeholder="<%=shipAddress%>" id="search-bar">
+                <button type="submit" class="btn btn-primary mb-2" id="header-btn-address">Modifier</button>
+              </form>
+            </div>
+          <a href="/card" class="offset-1 col-2 card-icon">
+            <div class="panier logo">
+              <%=nbArticles%>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <div class="top-background">
+    </div>
+
+    <div class="container article-view">
+      <div class="row">
+        <div class="col-4">
+          <h1 class="text-center"><%=beerView.name%></h1>
+          <h2> <img src="/images/mouth.svg" alt=""> <%=beerView.tasteslike%></h2>
+        </div>
+        <div class="col-4">
+            <img src="https://img.saveur-biere.com/img/p/<%=beerView.image%>" alt="" class="img-article-view">
+        </div>
+        <div class="col-3">
+          <div class="row details-article">
+            <div class="col-6 p-0">
+              <div class="col-12">Type : </div>
+              <div class="col-12">Degré : </div>
+              <div class="col-12">Volume : </div>
+              <div class="col-12">Origine : </div>
+            </div>
 
 
-    <div style="margin-top: 50px;">
-      <p><%=beerView.name%></p>
+            <div class="col-6 p-0">
+              <div class="col-12"><%=beerView.type%></div>
+              <div class="col-12"><%=beerView.alchooldegree%></div>
+              <div class="col-12"><%=beerView.volume%></div>
+              <div class="col-12"><%=beerView.origin%></div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-8 ligne"></div>
+            <div class="col-12 p-0">
+              <div class="row article-view-quantity">
+                <span class="col-8 rating-bar p-0">
+                <%
+                for (let j = 1; j <= 12; j++) { %>
+                  <a data-id="<%=i%>" data-value="<%=j%>"><img class="b-img" src="/images/beer-clear.png"></a>
+                <% } %>
+                </span>
+                <span class="col-1 n-0 p-0">
+                  <input class="beer-quantity" id="val<%=i%>" value="0" disabled></input>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row article-description">
+        <%=beerView.description%>
+      </div>
+      <div class="offset-4 col-4 article-view-back-btn">
+        <div class="article-view-back-div">
+          <a href="/catalogue" ><button type="button" class="btn btn-primary btn-lg">Revenir au catalogue</button></a>
+        </div>
+      </div>
     </div>
 
 
