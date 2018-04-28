@@ -76,10 +76,17 @@ header #search-bar {
   position: absolute;
   background: rgba(244, 144, 12, 0.85);
   background-image: radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
   -webkit-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
+}
 
+
+.broken-lel .top-background {
+  background-image: url("/images/brokenice.png"), radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
+  background-size: 630px, auto, auto;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 }
 
 main .main-top {
@@ -87,6 +94,7 @@ main .main-top {
   position: relative;
   background-image: url("/images/beer_ice_transparent.png"), radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
   background-repeat: no-repeat, no-repeat;
+
   background-position: right 25% bottom;
   background-size: 500px, auto;
 }
@@ -144,15 +152,15 @@ h3 {
   margin: 40px 0 20px 0;
 }
 
-#background-articles .rating-bar .b-img {
+.rating-bar .b-img {
   height: 40px;
 }
 
-#background-articles .rating-bar {
+.rating-bar {
   margin-left: 35px;
 }
 
-#background-articles .rating-bar img {
+.rating-bar img {
   margin-right: -3.5px;
 }
 
@@ -310,6 +318,45 @@ main .main-content .pres-cards-content {
   margin-right: 10px;
 }
 
+
+
+/********************************** A  R  T  I  C  L  E    V  I  E  W  **********************************/
+.article-view {
+  padding-top: 130px;
+  font-size: 16px;
+}
+
+.details-article {
+  margin-top: 70px;
+  background-color: white;
+  padding: 15px 0 15px 0;
+}
+
+.article-view h2 {
+  margin-top: 75px;
+}
+
+.article-view h2 img {
+  height: 40px;
+}
+
+.article-description {
+  margin: 30px 15px 0 15px;
+}
+
+.details-article .ligne {
+  border-top: 1px solid #e0e0e0;
+  margin: 24px 0 24px 0;
+}
+
+.article-view-back-btn {
+  margin: 30px auto 100px auto;
+}
+
+.article-view-back-div {
+  margin: auto;
+  width: 57%;
+}
 /****************************** S  Y  S  T  E  M  E    + / -   C  A  R  D  *********************************/
 
 .count-input {

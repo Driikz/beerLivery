@@ -14,7 +14,7 @@ var options = {
 mongoose.connect('mongodb://beerliveryUser:azerty@ds255329.mlab.com:55329/beerlivery', options, function(err) {
   console.log(err);
 });
-var beerSchema = mongoose.Schema({name: String, type: String, image: String, price: Number, quantity: Number});
+var beerSchema = mongoose.Schema({name: String,type: String,image: String,price: Number,origin: String,description: String,alchooldegree: String,volume: Number,tasteslike: String,quantity: Number});
 var beerModel = mongoose.model('databeers', beerSchema);
 // F I N   B D D
 
@@ -32,7 +32,7 @@ router.get('/', function(req, res, next) {
       res.render('catalogue', {
         beerList: databeers,
         beerCard: req.session.dataCardBeer,
-        articles: totalArticles,
+        nbArticles: totalArticles,
         shipAddress: req.session.address
       });
     });
@@ -44,7 +44,9 @@ router.post('/modify-address', function (req, res){
   res.redirect('/catalogue');
 });
 
+
 router.post('/', function(req, res, next) {
+
   if (req.body.quantity >= 0) {
     let exists = req.session.dataCardBeer.find(function(el) {
       return el.name === req.body.name;
@@ -67,6 +69,14 @@ router.post('/', function(req, res, next) {
       beerCard: req.session.dataCardBeer,
       articles: totalArticles
     });
+  });
+});
+
+router.get('/article', function (req, res, next){
+  res.render('article', {
+    beerView: req.query,
+    nbArticles: totalArticles,
+    shipAddress: req.session.address
   });
 });
 

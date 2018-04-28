@@ -31,7 +31,7 @@
           </div>
         <a href="/card" class="offset-1 col-2 card-icon">
           <div class="panier logo">
-            <%=articles%>
+            <%=nbArticles%>
           </div>
         </a>
       </div>
@@ -49,9 +49,11 @@
               <hr>
               <!-- Horizontal Rule -->
             </div>
-            <h4>
-              <%=beerList[i].name%>
-            </h4>
+            <a href="/catalogue/article?name=<%=beerList[i].name%>&type=<%=beerList[i].type%>&image=<%=beerList[i].image%>&price=<%=beerList[i].price%>&origin=<%=beerList[i].origin%>&description=<%=beerList[i].description%>&alchooldegree=<%=beerList[i].alchooldegree%>&volume=<%=beerList[i].volume%>&tasteslike=<%=beerList[i].tasteslike%>" class="m-0 p-0">
+              <h4>
+                <%=beerList[i].name%>
+              </h4>
+            </a>
             <p>
               <%=beerList[i].type%>
             </p>
