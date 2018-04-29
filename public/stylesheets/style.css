@@ -350,7 +350,7 @@ main .main-content .pres-cards-content {
 }
 
 .article-view-back-btn {
-  margin: 30px auto 100px auto;
+  margin: 60px auto 80px auto;
 }
 
 .article-view-back-div {
@@ -459,7 +459,7 @@ footer .logo {
 
 @media only screen and (max-width: 991px) {
 
-  /****************** I N D E X *******************/
+  /**************** I N D E X *****************/
 
   main .main-top {
     height: 400px;
@@ -481,7 +481,7 @@ footer .logo {
     padding: 10px 15px 15px 15px;
     font-size: 16px;
   }
-  /****************** C A T A L O G U E *******************/
+  /************ C A T A L O G U E *************/
   .article {
     height: 370px;
   }
@@ -489,14 +489,56 @@ footer .logo {
     height: 180px;
     margin: 40px 0 20px 0;
   }
-  /********************** C A R D  ************************/
+  /**************** C A R D  ******************/
   .main-card h1 {
     font-size: 30px;
   }
   .main-card {
     padding-top: 80px;
   }
-  /******************** F O O T E R  **********************/
+  /********** A R T I C L E   V I E W *********/
+  .article-view {
+    padding-top: 130px;
+    font-size: 16px;
+  }
+
+  .article-view img {
+    height: 300px;
+  }
+
+  .details-article {
+    margin-top: 70px;
+    background-color: white;
+    padding: 15px 0 15px 0;
+  }
+
+  .article-view h2 {
+    margin-top: 75px;
+  }
+
+  .article-view h2 img {
+    height: 40px;
+  }
+
+  .article-description {
+    margin: 30px 15px 0 15px;
+  }
+
+  .details-article .ligne {
+    border-top: 1px solid #e0e0e0;
+    margin: 24px 0 24px 0;
+  }
+
+  .article-view-back-btn {
+    margin: 60px auto 80px auto;
+  }
+
+  .article-view-back-div {
+    margin: auto;
+    width: 57%;
+  }
+
+  /*************** F O O T E R  ***************/
   footer {
     padding: 20px 0 20px 0;
   }
@@ -508,7 +550,7 @@ footer .logo {
 /************************ R E S P O N S I V E   7 6 7 P X  *************************/
 
 @media only screen and (max-width: 767px) {
-  /********************** I N D E X ***********************/
+  /**************** I N D E X ******************/
   main .main-top {
     height: 320px;
     padding: 0;
@@ -527,7 +569,7 @@ footer .logo {
   #search-button {
     height: 35px;
   }
-  /********************* C A R D  ***********************/
+  /**************** C A R D  ******************/
   .main-card h1 {
     font-size: 25px;
   }
@@ -543,7 +585,7 @@ footer .logo {
   .card-resume h3 {
     font-size: 20px;
   }
-  /******************** F O O T E R  **********************/
+  /************** F O O T E R  ****************/
   footer {
     padding: 10px 0 10px 0;
   }
@@ -558,7 +600,7 @@ footer .logo {
 /************************ R E S P O N S I V E   4 2 2 P X  *************************/
 
 @media only screen and (max-width: 422px) {
-  /********************** I N D E X **********************/
+  /***************** I N D E X *****************/
   main .main-top h1 {
     font-size: 25px;
     padding-top: 70px;
@@ -577,7 +619,7 @@ footer .logo {
   main .main-content .pres-cards h3 {
     font-size: 18px;
   }
-  /********************** C A R D  *************************/
+  /**************** C A R D  *******************/
   .card-options h2 {
     font-size: 18px;
   }
