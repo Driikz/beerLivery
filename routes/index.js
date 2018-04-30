@@ -35,12 +35,16 @@ router.post('/search-address', function(req, res) {
   } else {
     req.session.address = req.body.address;
     request("https://maps.googleapis.com/maps/api/directions/json?origin=" + addrOrigin + "&destination=" + req.body.address + "&mode=bicycling&key=AIzaSyDsUHAZo4SpFfe0M0_05WWmYKy7AcLoFtI", function(err, response, body) {
-      body = JSON.parse(body);
-      req.session.location = {
-        latLng: body.routes[0].legs[0].end_location,
-        name: body.routes[0].legs[0].end_address
-      };
-      res.redirect('catalogue');
+      if (body.routes) {
+        body = JSON.parse(body);
+        req.session.location = {
+          latLng: body.routes[0].legs[0].end_location,
+          name: body.routes[0].legs[0].end_address
+        };
+        res.redirect('catalogue');
+      } else {
+        res.redirect('/');
+      }
     });
   }
 });
