@@ -318,7 +318,13 @@ main .main-content .pres-cards-content {
   margin-right: 10px;
 }
 
-
+.card-resume-nb-total {
+  font-weight: bold;
+  font-family: 'Changa', sans-serif;
+  color: #2a9ad6;
+  font-size: 40px;
+  margin-top: 20px;
+}
 
 /********************************** A  R  T  I  C  L  E    V  I  E  W  **********************************/
 .article-view {
@@ -329,7 +335,7 @@ main .main-content .pres-cards-content {
 .details-article {
   margin-top: 70px;
   background-color: white;
-  padding: 15px 0 15px 0;
+  padding: 25px 0 25px 0;
 }
 
 .article-view h2 {
@@ -341,7 +347,7 @@ main .main-content .pres-cards-content {
 }
 
 .article-description {
-  margin: 30px 15px 0 15px;
+  margin: 30px 75px 0 75px;
 }
 
 .details-article .ligne {
@@ -350,7 +356,7 @@ main .main-content .pres-cards-content {
 }
 
 .article-view-back-btn {
-  margin: 60px auto 80px auto;
+  margin: 60px auto 60px auto;
 }
 
 .article-view-back-div {
@@ -497,47 +503,9 @@ footer .logo {
     padding-top: 80px;
   }
   /********** A R T I C L E   V I E W *********/
-  .article-view {
-    padding-top: 130px;
-    font-size: 16px;
-  }
-
   .article-view img {
     height: 300px;
   }
-
-  .details-article {
-    margin-top: 70px;
-    background-color: white;
-    padding: 15px 0 15px 0;
-  }
-
-  .article-view h2 {
-    margin-top: 75px;
-  }
-
-  .article-view h2 img {
-    height: 40px;
-  }
-
-  .article-description {
-    margin: 30px 15px 0 15px;
-  }
-
-  .details-article .ligne {
-    border-top: 1px solid #e0e0e0;
-    margin: 24px 0 24px 0;
-  }
-
-  .article-view-back-btn {
-    margin: 60px auto 80px auto;
-  }
-
-  .article-view-back-div {
-    margin: auto;
-    width: 57%;
-  }
-
   /*************** F O O T E R  ***************/
   footer {
     padding: 20px 0 20px 0;
@@ -562,11 +530,11 @@ footer .logo {
     padding-top: 80px;
     font-weight: bold;
   }
-  #search-bar {
+  .main-top #search-bar {
     width: 300px;
     height: 35px;
   }
-  #search-button {
+  .main-top #search-button {
     height: 35px;
   }
   /**************** C A R D  ******************/
@@ -606,11 +574,11 @@ footer .logo {
     padding-top: 70px;
     font-weight: bold;
   }
-  #search-bar {
+  .main-top #search-bar {
     width: 200px;
     height: 35px;
   }
-  #search-button {
+  .main-top #search-button {
     height: 35px;
   }
   main .main-content .pres-cards-content {
