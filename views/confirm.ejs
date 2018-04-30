@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>beerLivery - Nos bières, chez vous, dans la d'mi heure</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Changa|Quicksand|Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <script src="/javascripts/script.js"></script>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
 
-  <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <a href="/" class="col-lg-5 logo">
-            <div>beerLivery</div>
-          </a>
-        </div>
-      </div>
-    </header>
+<head>
+  <meta charset="utf-8">
+  <title>beerLivery - Nos bières, chez vous, dans la d'mi heure</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Changa|Quicksand|Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+  <script src="/javascripts/script.js"></script>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
 
-    <div class="top-background">
-    </div>
-    <div class="container main-card">
+<body>
+  <header>
+    <div class="container-fluid">
       <div class="row">
-        <div class="offset-2 col-8 text-center" id="card-empty-404">
-          <h3>Merci ! Votre commande à été accepté</h3>
-          <div class="row">
-            <div class="col-12">
-              <div id="map"></div>
-              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsUHAZo4SpFfe0M0_05WWmYKy7AcLoFtI&callback=initMap&libraries=places"></script>
-            </div>
-          </div>
-          <h3>Notre livreur sera là dans moins de 30 minutes</h3>
-          <a href="/"><h3>Retouner à l'accueil</h3></a>
-        </div>
+        <a href="/" class="col-lg-5 logo">
+          <div>beerLivery</div>
+        </a>
       </div>
     </div>
+  </header>
+
+  <div class="top-background">
+  </div>
+  <div class="container main-card">
+    <div class="row">
+      <div class="offset-2 col-8 text-center" id="card-empty-404">
+        <h3>Merci ! Votre commande à été accepté</h3>
+        <div class="row">
+          <div class="col-12">
+            <div id="map"></div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsUHAZo4SpFfe0M0_05WWmYKy7AcLoFtI&callback=initMap&libraries=places"></script>
+          </div>
+        </div>
+        <h3>Notre livreur sera là dans moins de 30 minutes</h3>
+        <a href="/"><h3>Retouner à l'accueil</h3></a>
+      </div>
+    </div>
+  </div>
 
   <script src="/javascripts/map.js"></script>
-  </body>
+</body>
+
 </html>
