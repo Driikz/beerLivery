@@ -3,7 +3,6 @@ body {
   margin: 0;
   background-color: #f7f6f6;
   font-family: 'PT Sans', sans-serif;
-
 }
 
 #map {
@@ -11,6 +10,7 @@ body {
 }
 
 /** POLICE LOGO **/
+
 .logo {
   font-family: 'Changa', sans-serif;
   font-size: 40px;
@@ -48,7 +48,7 @@ header .card-icon {
   margin-top: 5px;
 }
 
-header .panier{
+header .panier {
   width: 70px;
   font-size: 30px;
 }
@@ -67,6 +67,7 @@ header #search-bar {
   margin: 4px 0 5px 10px;
   padding: 4px 12px 4px 12px;
 }
+
 /*******************************  M  A  I  N    T  O  P  **********************************/
 
 .top-background {
@@ -82,7 +83,6 @@ header #search-bar {
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
 }
 
-
 .broken-lel .top-background {
   background-image: url("/images/brokenice.png"), radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
   background-size: 630px, auto, auto;
@@ -94,7 +94,6 @@ main .main-top {
   position: relative;
   background-image: url("/images/beer_ice_transparent.png"), radial-gradient(ellipse at 30% top, #fccd35 15%, rgba(244, 144, 12, 0.85) 70%);
   background-repeat: no-repeat, no-repeat;
-
   background-position: right 25% bottom;
   background-size: 500px, auto;
 }
@@ -102,7 +101,6 @@ main .main-top {
 main .main-top h1 {
   margin-left: 0;
   padding-top: 100px;
-
 }
 
 h1 {
@@ -163,7 +161,6 @@ h3 {
 .rating-bar img {
   margin-right: -3.5px;
 }
-
 
 .beer-quantity {
   border: 0;
@@ -327,6 +324,7 @@ main .main-content .pres-cards-content {
 }
 
 /********************************** A  R  T  I  C  L  E    V  I  E  W  **********************************/
+
 .article-view {
   padding-top: 130px;
   font-size: 16px;
@@ -363,6 +361,7 @@ main .main-content .pres-cards-content {
   margin: auto;
   width: 57%;
 }
+
 /****************************** S  Y  S  T  E  M  E    + / -   C  A  R  D  *********************************/
 
 .count-input {
@@ -464,9 +463,7 @@ footer .logo {
 /************************ R E S P O N S I V E   9 9 1 P X  *************************/
 
 @media only screen and (max-width: 991px) {
-
   /**************** I N D E X *****************/
-
   main .main-top {
     height: 400px;
     padding: 0;

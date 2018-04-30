@@ -8,29 +8,28 @@ var optionsData = {
     {
       name: "Cacahuètes",
       quantity: 0,
-      image:'/images/peanut.svg',
+      image: '/images/peanut.svg',
       price: 1
     }, {
       name: "Bretzels",
       quantity: 0,
-      image:'/images/pretzel.svg',
-      price:1
+      image: '/images/pretzel.svg',
+      price: 1
     }, {
       name: "Chips",
       quantity: 0,
-      image:'/images/snack.svg',
+      image: '/images/snack.svg',
       price: 1
     }
   ],
   decapsuleur: {
     quantity: 0,
-    image:'/images/bottle-opener.svg',
+    image: '/images/bottle-opener.svg',
     price: 2
   }
 };
 
 var origin = "153 cours Albert Thomas 69003 Lyon";
-
 
 router.get('/', function(req, res, next) {
   if (!req.session.dataCardBeer) {

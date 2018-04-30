@@ -23,12 +23,12 @@
         <a href="/" class="col-5 logo p-0">
           <div>beerLivery</div>
         </a>
-          <div class="col-5 header-bar-address">
-            <form class="form-inline" action="/catalogue/modify-address" method="POST">
-              <input class="form-control" type="text" name="address" placeholder="<%=shipAddress%>" id="search-bar">
-              <button type="submit" class="btn btn-primary mb-2" id="header-btn-address">Modifier</button>
-            </form>
-          </div>
+        <div class="col-5 header-bar-address">
+          <form class="form-inline" action="/catalogue/modify-address" method="POST">
+            <input class="form-control" type="text" name="address" placeholder="<%=shipAddress%>" id="search-bar">
+            <button type="submit" class="btn btn-primary mb-2" id="header-btn-address">Modifier</button>
+          </form>
+        </div>
         <a href="/card" class="col-2 card-icon">
           <div class="panier logo">
             <%=nbArticles%>
@@ -49,7 +49,8 @@
               <hr>
               <!-- Horizontal Rule -->
             </div>
-            <a href="/catalogue/article?name=<%=beerList[i].name%>&type=<%=beerList[i].type%>&image=<%=beerList[i].image%>&price=<%=beerList[i].price%>&origin=<%=beerList[i].origin%>&description=<%=beerList[i].description%>&alchooldegree=<%=beerList[i].alchooldegree%>&volume=<%=beerList[i].volume%>&tasteslike=<%=beerList[i].tasteslike%>" class="m-0 p-0">
+            <a href="/catalogue/article?name=<%=beerList[i].name%>&type=<%=beerList[i].type%>&image=<%=beerList[i].image%>&price=<%=beerList[i].price%>&origin=<%=beerList[i].origin%>&description=<%=beerList[i].description%>&alchooldegree=<%=beerList[i].alchooldegree%>&volume=<%=beerList[i].volume%>&tasteslike=<%=beerList[i].tasteslike%>"
+              class="m-0 p-0">
               <h4>
                 <%=beerList[i].name%>
               </h4>
@@ -68,7 +69,7 @@
                   <a data-id="<%=i%>" data-value="<%=j%>"><img class="b-img" src="/images/beer-clear.png"></a>
                 <% } %>
                 </span>
-              <span class="col-1 centered n-0 p-0">
+                <span class="col-1 centered n-0 p-0">
                 <input class="beer-quantity" id="val<%=i%>" value="0" disabled></input>
               </span>
 

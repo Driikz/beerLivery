@@ -45,7 +45,7 @@ for (let biere of bieres.children) {
           data: JSON.stringify({name: b_selector.parentElement.parentElement.parentElement.parentElement.querySelector('h4').innerText, quantity: b_selector.parentElement.parentElement.querySelector('input[name=quantity]').value, price: b_selector.parentElement.parentElement.querySelector('input[name=price]').value})
         });
         var total = 0;
-        for(obj of document.querySelectorAll('.beer-quantity')) {
+        for (obj of document.querySelectorAll('.beer-quantity')) {
           total += parseInt(obj.value);
         }
         document.querySelector('.panier').innerText = total;
