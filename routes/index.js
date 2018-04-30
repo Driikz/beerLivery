@@ -2,6 +2,9 @@ const express = require('express');
 const router = express.Router();
 const stripe = require('stripe')('sk_test_uazSXLD1OuOgwsSwf6r93K8S');
 const mongoose = require('mongoose');
+const request = require('request');
+
+const addrOrigin = '153 Cours albert Thomas, Lyon 69003';
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -31,7 +34,14 @@ router.post('/search-address', function(req, res) {
     res.redirect('/')
   } else {
     req.session.address = req.body.address;
-    res.redirect('catalogue');
+    request("https://maps.googleapis.com/maps/api/directions/json?origin=" + addrOrigin + "&destination=" + req.body.address + "&mode=bicycling&apikey=AIzaSyDsUHAZo4SpFfe0M0_05WWmYKy7AcLoFtI", function(err, response, body) {
+      body = JSON.parse(body);
+      req.session.location = {
+        latLng: body.routes[0].legs[0].end_location,
+        name: body.routes[0].legs[0].end_address
+      };
+      res.redirect('catalogue');
+    });
   }
 });
 

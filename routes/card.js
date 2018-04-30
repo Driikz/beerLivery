@@ -151,6 +151,7 @@ router.get('/options-increase', function(req, res, next) {
 });
 
 router.post('/checkout', function(req, res) {
+  console.log(req.session.location);
   var totalCmd = 0;
   var totalBeers = 0;
   var totalDecapsuleur = 0;
@@ -177,7 +178,7 @@ router.post('/checkout', function(req, res) {
 
   stripe.customers.create({email: req.body.stripeEmail, source: req.body.stripeToken}).then(customer => stripe.charges.create({amount: totalCmd, description: "Commande beerLivery", currency: "eur", customer: customer.id})).then(charge => {
     req.session.dataCardBeer = [];
-    res.render('confirm', {origin});
+    res.render('confirm', {origin, mapDestination: req.session.location});
   });
 });
 

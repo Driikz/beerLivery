@@ -4,7 +4,7 @@ function initMap() {
     lng: 4.877133
   };
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
+    zoom: 12,
     center: lyon,
     style: [
       {
@@ -224,7 +224,17 @@ function initMap() {
     ]
   });
 
-  for (var i = 0; i < cities.length; i++) {
-    var marker = new google.maps.Marker({position: lyon, map: map});
-  }
+  let location = document.querySelector('#destAddress');
+
+  let latData = parseFloat(location.dataset.destinationLat);
+  let lngData = parseFloat(location.dataset.destinationLng);
+
+  var marker = new google.maps.Marker({position: lyon, map: map});
+  var marker = new google.maps.Marker({
+    position: {
+      lat: latData,
+      lng: lngData
+    },
+    map: map
+  });
 }
