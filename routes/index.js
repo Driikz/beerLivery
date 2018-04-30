@@ -36,15 +36,11 @@ router.post('/search-address', function(req, res) {
     req.session.address = req.body.address;
     request("https://maps.googleapis.com/maps/api/directions/json?origin=" + addrOrigin + "&destination=" + req.body.address + "&mode=bicycling&apikey=AIzaSyAP8dCCIoundmTkd0k4FGwXLBgxzuydH2s", function(err, response, body) {
       body = JSON.parse(body);
-      if (body.routes[0]) {
-        req.session.location = {
-          latLng: body.routes[0].legs[0].end_location,
-          name: body.routes[0].legs[0].end_address
-        };
-        res.redirect('catalogue');
-      } else {
-        res.redirect('catalogue');
-      }
+      req.session.location = {
+        latLng: body.routes[0].legs[0].end_location,
+        name: body.routes[0].legs[0].end_address
+      };
+      res.redirect('catalogue');
     });
   }
 });
